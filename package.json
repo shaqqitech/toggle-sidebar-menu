@@ -2,11 +2,13 @@
   "name": "loginform",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shaqqitech.github.io/toggle-sidebar-menu",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
